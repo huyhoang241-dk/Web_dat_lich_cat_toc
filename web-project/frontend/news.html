@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tin tức - Barber Shop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/news-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body> 
+    
+   <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="./image_cnpm/logo.png" alt="Barber Shop Logo">
+            </div>
+
+            <div class="hamburger-icon">
+                <i class="fas fa-bars"></i>
+                </div>
+
+            <div class="mobile-menu-overlay">
+                 <div class="mobile-menu-content">
+                     <div class="close-icon">
+                         <i class="fas fa-times"></i>
+                         </div>
+                     <nav class="mobile-nav">
+                         <ul>
+                             <li><a href="index.html">Trang chủ</a></li>
+                             <li><a href="about.html">Về chúng tôi</a></li>
+                             <li><a href="services.html">Dịch vụ</a></li>
+                             <li><a href="news.html">Tin tức</a></li> 
+                         </ul>
+                     </nav>
+                     <div class="mobile-header-buttons">
+                         <a href="appointment.php" class="btn primary-btn">Đặt lịch hẹn</a> 
+                         <a href="login.html" class="btn primary-btn ">Đăng nhập</a> 
+                         <a href="register.html" class="btn primary-btn">Đăng ký</a>     
+                     </div>
+                 </div>
+            </div>
+
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Về chúng tôi</a></li> 
+                    <li><a href="services.html">Dịch vụ</a></li> 
+                    <li><a href="news.html">Tin tức</a></li>  
+            </nav>
+            <div class="header-buttons desktop-buttons">
+                <a href="appointment.php" class="btn primary-btn">Đặt lịch hẹn</a> 
+            </div>
+            <div class="header-buttons desktop-buttons">
+                 <div class="user-account">
+                <a href="login.html" class="user-icon-link logged-out-only"> 
+                    <i class="fas fa-user-circle"></i>
+                    <span>Đăng nhập</span>
+                </a>
+
+                 <a href="#" class="user-icon-link logged-in-only"> 
+                    <i class="fas fa-user-circle"></i>
+                    <span>Tài khoản của tôi</span>
+                    <i class="fas fa-chevron-down"></i> 
+                </a>
+                <div class="account-dropdown logged-in-only"> 
+                    <a href="my-profile.html">Tài khoản của tôi</a>
+                    <a href="history.php">Lịch sử đặt lịch</a>
+                    <a href="./js/script.js" id="desktop-logout-link">Đăng xuất</a>
+                </div>
+        </div>
+    </header>
+
+    <main class="news-main">
+      <div class="container">
+        <!-- Banner tin tức -->
+        <section class="news-banner">
+          <h1>Tin tức & Xu hướng</h1>
+          <p>Cập nhật những kiến thức mới nhất về chăm sóc tóc nam</p>
+        </section>
+
+        <!-- Danh mục tin tức -->
+        <div class="news-categories">
+          <button class="category-btn active" data-category="all">
+            Tất cả
+          </button>
+          <button class="category-btn" data-category="trends">Xu hướng</button>
+          <button class="category-btn" data-category="tips">Mẹo hay</button>
+          <button class="category-btn" data-category="stories">
+            Câu chuyện
+          </button>
+        </div>
+
+        <!-- Danh sách bài viết -->
+        <section class="articles-grid">
+          <!-- Bài viết 1 -->
+          <article class="article-card" data-category="trends">
+            <div class="article-image">
+              <img src="./image_cnpm/news-1.jpg" alt="Xu hướng tóc nam 2024" />
+              <span class="category-badge">Xu hướng</span>
+            </div>
+            <div class="article-content">
+              <time datetime="2024-05-15">15/05/2025</time>
+              <h3>Top 5 kiểu tóc nam hot nhất 2025</h3>
+              <p>
+                Khám phá những xu hướng cắt tóc nam sẽ thống trị năm nay, từ
+                phong cách cổ điển đến hiện đại...
+              </p>
+              <a href="article-detail.html" class="read-more"
+                >Đọc tiếp <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Bài viết 2 -->
+          <article class="article-card" data-category="tips">
+            <div class="article-image">
+              <img src="./image_cnpm/news-2.png" alt="Chăm sóc tóc nam" />
+              <span class="category-badge">Mẹo hay</span>
+            </div>
+            <div class="article-content">
+              <time datetime="2024-12-10">10/05/2024</time>
+              <h3>Bí quyết chăm sóc tóc nam dành cho dân văn phòng</h3>
+              <p>
+                5 bước đơn giản để có mái tóc khỏe đẹp dù bận rộn cả ngày với
+                công việc...
+              </p>
+              <a href="article-detail.html" class="read-more"
+                >Đọc tiếp <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Bài viết 3 -->
+          <article class="article-card" data-category="stories">
+            <div class="article-image">
+              <img src="./image_cnpm/news-3.jpg" alt="Câu chuyện nghề barber" />
+              <span class="category-badge">Câu chuyện</span>
+            </div>
+            <div class="article-content">
+              <time datetime="2024-05-05">05/05/2024</time>
+              <h3>Hành trình từ thợ phụ trở thành Barber chuyên nghiệp</h3>
+              <p>
+                Chia sẻ từ anh Minh - người đã gắn bó với nghề barber hơn 10
+                năm...
+              </p>
+              <a href="article-detail.html" class="read-more"
+                >Đọc tiếp <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Bài viết 4 -->
+          <article class="article-card" data-category="tips">
+            <div class="article-image">
+              <img src="./image_cnpm/news-4.jpg" alt="Chăm sóc râu" />
+              <span class="category-badge">Mẹo hay</span>
+            </div>
+            <div class="article-content">
+              <time datetime="2024-05-03">28/04/2024</time>
+              <h3>5 sản phẩm chăm sóc râu không thể thiếu</h3>
+              <p>
+                Tìm hiểu những sản phẩm giúp bạn có bộ râu đẹp và khỏe mạnh...
+              </p>
+              <a href="article-detail.html" class="read-more"
+                >Đọc tiếp <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+          <!-- Bài viết 5 -->
+          <article class="article-card" data-category="trends">
+            <div class="article-image">
+              <img src="./image_cnpm/news-5.jpg" alt="Undercut 2024">
+              <span class="category-badge">Xu hướng</span>
+            </div>
+            <div class="article-content">
+                <time datetime="2024-04-10">10/06/2024</time>
+                <h3>Kiểu Undercut biến tấu - Lựa chọn của sao Hollywood 2024</h3>
+                <p>Cập nhật cách các ngôi sao như Chris Hemsworth và David Beckham đang cách tân kiểu tóc undercut truyền thống...</p>
+                <a href="undercut-trend.html" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <!-- Bài viết 6 -->
+          <article class="article-card" data-category="tips">
+            <div class="article-image">
+                <img src="./image_cnpm/news-6.jpg" alt="Chăm sóc tóc mùa hè">
+                <span class="category-badge">Mẹo hay</span>
+            </div>
+            <div class="article-content">
+                <time datetime="2024-04-05">05/06/2024</time>
+                <h3>Bảo vệ tóc khỏi nắng nóng mùa hè - 7 bước đơn giản</h3>
+                <p>Mùa hè với nắng nóng và khói bụi là kẻ thù của mái tóc đẹp. Khám phá bí quyết từ chuyên gia...</p>
+                <a href="summer-hair-care.html" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </section>
+
+        <!-- Phân trang -->
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn next-btn">
+            Tiếp <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <section class="newsletter-section">
+      <div class="container">
+        <h3>Đăng ký nhận tin mới</h3>
+        <p>Nhận các bài viết mới nhất và ưu đãi đặc biệt qua email</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Nhập email của bạn" required />
+          <button href ="register.html" type="submit" class="btn primary-btn">Đăng ký</button>
+        </form>
+      </div>
+    </section>
+
+  
+   <footer style="background-color: #1a1a1a; color: #fff; text-align: center; padding: 20px;">
+         <p> Barber Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
